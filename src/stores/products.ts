@@ -1,9 +1,10 @@
 import { action, autorun, makeAutoObservable, observable } from 'mobx'
 
 import { IProducts } from '../modules'
+import { products } from '../utils/localData'
 
 class ProductsStore {
-  @observable allProducts: IProducts[] = []
+  @observable allProducts: IProducts[] = products
   @observable searchProductsTitle: string[] = []
   @observable searchResult: string[] = []
 
@@ -14,11 +15,6 @@ class ProductsStore {
         .map(({ title }) => title.toLowerCase())
         .sort((a, b) => a.localeCompare(b))
     })
-  }
-
-  @action
-  async setAllProducts(products: IProducts[]): Promise<void> {
-    this.allProducts = products
   }
 
   @action setSearchResult(search: string) {

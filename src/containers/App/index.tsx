@@ -12,8 +12,6 @@ import Categories from '../../components/Categories'
 import Loading from '../../components/Loading'
 
 //actions
-import * as productsActions from '../../actions/products'
-import * as specialOffersActions from '../../actions/specialOffers'
 import * as categoriesActions from '../../actions/categories'
 
 export default observer(function App() {
@@ -27,8 +25,6 @@ export default observer(function App() {
     AppStore.setIsLoading(true)
     AppStore.setDefaultTheme()
     try {
-      await productsActions.getProducts()
-      await specialOffersActions.getSpecialOffers()
       await categoriesActions.getCategories()
     } finally {
       AppStore.setIsLoading(false)

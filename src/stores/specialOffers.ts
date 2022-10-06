@@ -1,17 +1,13 @@
-import { action, makeAutoObservable, observable } from 'mobx'
+import { makeAutoObservable, observable } from 'mobx'
 
 import { ISpecialOffers } from '../modules'
+import { specialOffers } from '../utils/localData'
 
 class SpecialOffersStore {
-  @observable allSpecialOffers: ISpecialOffers[] = []
+  @observable allSpecialOffers: ISpecialOffers[] = specialOffers
 
   constructor() {
     makeAutoObservable(this)
-  }
-
-  @action
-  async setAllSpecialOffers(specialOffers: ISpecialOffers[]): Promise<void> {
-    this.allSpecialOffers = specialOffers
   }
 }
 
