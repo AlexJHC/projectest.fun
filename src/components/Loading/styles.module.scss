@@ -1,0 +1,31 @@
+@import "./src/sources/styles/variables";
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $lightDark;
+  opacity: 0.4;
+
+  p {
+    background: linear-gradient(to right, $themWhite 20%, $blue 40%, $blue 60%, $themWhite 80%);
+    background-size: 200% auto;
+    font-size: 75px;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 100px;
+    animation: shine 2s linear infinite;
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+

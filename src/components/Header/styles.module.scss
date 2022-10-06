@@ -1,0 +1,212 @@
+@import "./src/sources/styles/mixins";
+
+.container {
+  position: relative;
+
+
+  picture {
+    display: flex;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  nav {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    padding: 18px 16px 30px 16px;
+    -webkit-tap-highlight-color: transparent;
+    @include smoothColor();
+    @include themed() {
+      background: themedValue(backgroundColorHeader);
+
+      .menu {
+        display: none;
+      }
+
+      @media (min-width: 1440px) {
+        padding: 32px 60px 30px 60px;
+
+        .menu {
+          display: block;
+
+          ul {
+            display: flex;
+            gap: 32px;
+            color: themedValue(text);
+            cursor: pointer;
+          }
+
+          li {
+            list-style: none;
+
+            &:hover {
+              color: themedValue(title);
+            }
+
+            &:last-child {
+              position: relative;
+            }
+
+            &:last-child:after {
+              content: "";
+              position: absolute;
+              border: solid themedValue(text);
+              border-width: 0 3px 3px 0;
+              display: inline-block;
+              padding: 3px;
+              transform: rotate(45deg);
+              top: 28%;
+              right: -40%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    position: relative;
+    height: 2px;
+    width: 20px;
+    background-color: #C4C4C4;
+    cursor: pointer;
+    margin-bottom: 4px;
+    user-select: none;
+
+    &:after {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 20px;
+      background-color: #C4C4C4;
+      top: 8px;
+      right: 0;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 20px;
+      background-color: #C4C4C4;
+      top: -8px;
+      right: 0;
+    }
+
+    @media (min-width: 720px) {
+      height: 4px;
+      width: 4px;
+      border-radius: 50%;
+
+      &:after,
+      &:before {
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    user-select: none;
+    @include themed() {
+
+      button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        filter: themedValue(nav);
+        transition: transform 400ms;
+
+        &:hover {
+          transform: translateY(-4%) scale(1.1);
+        }
+      }
+
+      // need picture from designer without circle
+      .avatar {
+        filter: none;
+        position: relative;
+      }
+
+      .avatar:after {
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        top: 0;
+        left: 0;
+        border: 2px solid themedValue(title);
+        border-radius: 50%;
+      }
+
+      .avatar,
+      .basket,
+      .like {
+        display: none;
+      }
+
+      @media (min-width: 720px) {
+        .avatar,
+        .basket,
+        .like {
+          display: block;
+        }
+      }
+    }
+  }
+
+  section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    left: 4%;
+    top: 32%
+  }
+
+  h3 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: -2px;
+    @media (min-width: 1024px) {
+      font-size: 112px;
+      line-height: 112px;
+      letter-spacing: -5px;
+    }
+  }
+
+  p {
+    white-space: pre;
+    color: #FFFFFF;
+    max-width: 60%;
+    font-weight: 400;
+    font-size: 18px;
+    @media (min-width: 720px) {
+      font-size: 24px;
+      padding-bottom: 32px;
+      letter-spacing: 1px;
+    }
+
+    br {
+      @media (min-width: 720px) {
+        display: none;
+      }
+    }
+  }
+}

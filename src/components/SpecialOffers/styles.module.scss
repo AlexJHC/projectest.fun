@@ -1,0 +1,163 @@
+@import "./src/sources/styles/mixins";
+
+.container {
+  min-height: 1550px;
+  padding-bottom: 48px;
+  position: relative;
+  @include themed() {
+    background-color: themedValue(backgroundColorMain);
+
+
+    @media (min-width: 720px) {
+      min-height: auto;
+      padding-left: 60px;
+    }
+
+    .title {
+      padding-left: 16px;
+      padding-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .next, .prev {
+        width: 32px;
+      }
+
+
+      h3 {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -1px;
+        font-weight: 700;
+        position: relative;
+        color: themedValue(title);
+
+        &:after {
+          @include arrow();
+          left: 155px;
+        }
+      }
+
+      @media (min-width: 720px) {
+        padding-bottom: 28px;
+        padding-left: 0
+      }
+    }
+
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      margin-left: 0;
+      margin-right: 0;
+
+
+      //// delete default swiper buttons
+      //.div:global(.swiper-button-prev),
+      //.div:global(.swiper-button-next) {
+      //  background-size: contain !important;
+      //  background-repeat: no-repeat !important;
+      //  background-position: center !important;
+      //}
+      //.div:global(.swiper-button-prev)::after,
+      //.div:global(.swiper-button-next)::after {
+      //  display: none !important;
+      //}
+
+
+      .swiperScrollbar {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 24px;
+        width: 91.21%;
+        border-radius: 60px;
+        height: 8px;
+        background-color: themedValue(theme);
+
+        div {
+          background: themedValue(swiper);
+          width: 25%;
+        }
+      }
+    }
+
+    .slide {
+      height: calc(100% / 3) !important;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+
+
+      @media (min-width: 720px) {
+        min-height: 515px;
+        min-width: 500px;
+      }
+      @media (min-width: 720px) {
+        min-width: 650px;
+      }
+
+
+      .cardContent {
+        gap: 12px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        bottom: 10%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+        @media (min-width: 720px) {
+          width: 100%;
+          margin-left: 0;
+          bottom: 10%;
+          left: 6%;
+        }
+
+        h4 {
+          font-size: 44px;
+          line-height: 44px;
+          letter-spacing: -1px;
+          font-weight: 700;
+          color: #FFFFFF;
+          @media (min-width: 720px) {
+            font-size: 64px;
+            line-height: 64px;
+            letter-spacing: -3px;
+          }
+        }
+      }
+    }
+
+    .content {
+      max-width: 650px;
+      max-height: 515px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+      img {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+        @media (max-width: 362px) {
+          margin-left: 14px;
+        }
+
+        @media (min-width: 720px) {
+          //width: 100%;
+          //height: auto;
+          //object-fit: cover;
+        }
+      }
+    }
+  }
+}

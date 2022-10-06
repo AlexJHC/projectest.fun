@@ -1,0 +1,244 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Overhit with belt",
+      "categories": "Women's outerwear",
+      "price": 55,
+      "discount": 50,
+      "newProduct": false,
+      "images": [
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large1.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large3.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large2.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large1.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Dress",
+      "categories": "Women's dresses",
+      "price": 9.99,
+      "discount": null,
+      "newProduct": true,
+      "images": [
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large2.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large2.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large3.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large1.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Top",
+      "categories": "Women's underwear",
+      "price": 16,
+      "discount": null,
+      "newProduct": true,
+      "images": [
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large3.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Nice Dress",
+      "categories": "Women's outerwear",
+      "price": 80,
+      "discount": 30,
+      "newProduct": false,
+      "images": [
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large3.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Hoodie",
+      "categories": "Women's outerwear",
+      "price": 75,
+      "discount": 15,
+      "newProduct": false,
+      "images": [
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large1.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large3.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large2.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large1.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Sunglasses",
+      "categories": "Women's outerwear",
+      "price": 12,
+      "discount": null,
+      "newProduct": true,
+      "images": [
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large1.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large3.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large2.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large1.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Old Hat",
+      "categories": "Women's outerwear",
+      "price": 18,
+      "discount": 80,
+      "newProduct": false,
+      "images": [
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large1.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large3.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large2.jpg"
+        },
+        {
+          "smallUrl": "http://localhost:3001/assets/images/products/small/small.jpg",
+          "largeUrl": "http://localhost:3001/assets/images/products/large/large1.jpg"
+        }
+      ]
+    }
+  ],
+  "SpecialOffers": [
+    {
+      "id": 20,
+      "title": "Special Offer",
+      "images": {
+        "smallUrl": "http://localhost:3001/assets/images/specialOffers/small/small1.jpg",
+        "largeUrl": "http://localhost:3001/assets/images/specialOffers/large/large1.jpg"
+      }
+    },
+    {
+      "id": 21,
+      "title": "Street Wear",
+      "images": {
+        "smallUrl": "http://localhost:3001/assets/images/specialOffers/small/small3.jpg",
+        "largeUrl": "http://localhost:3001/assets/images/specialOffers/large/large1.jpg"
+      }
+    },
+    {
+      "id": 22,
+      "title": "Unisex",
+      "images": {
+        "smallUrl": "http://localhost:3001/assets/images/specialOffers/small/small2.jpg",
+        "largeUrl": "http://localhost:3001/assets/images/specialOffers/large/large2.jpg"
+      }
+    },
+    {
+      "id": 23,
+      "title": "Only Tomorrow",
+      "images": {
+        "smallUrl": "http://localhost:3001/assets/images/specialOffers/small/small2.jpg",
+        "largeUrl": "http://localhost:3001/assets/images/specialOffers/large/large1.jpg"
+      }
+    },
+    {
+      "id": 24,
+      "title": "Dance Collection",
+      "images": {
+        "smallUrl": "http://localhost:3001/assets/images/specialOffers/small/small3.jpg",
+        "largeUrl": "http://localhost:3001/assets/images/specialOffers/large/large2.jpg"
+      }
+    },
+    {
+      "id": 25,
+      "title": "Women's outerwear",
+      "images": {
+        "smallUrl": "http://localhost:3001/assets/images/specialOffers/small/small1.jpg",
+        "largeUrl": "http://localhost:3001/assets/images/specialOffers/large/large1.jpg"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": 30,
+      "title": "Women",
+      "image": "http://localhost:3001/assets/images/categories/category1.jpg"
+    },
+    {
+      "id": 31,
+      "title": "Kids",
+      "image": "http://localhost:3001/assets/images/categories/category2.jpg"
+    },
+    {
+      "id": 32,
+      "title": "Man",
+      "image": "http://localhost:3001/assets/images/categories/category3.jpg"
+    },
+    {
+      "id": 33,
+      "title": "Sale",
+      "image": "http://localhost:3001/assets/images/categories/category3.jpg"
+    },
+    {
+      "id": 34,
+      "title": "Popular",
+      "image": "http://localhost:3001/assets/images/categories/category1.jpg"
+    }
+  ]
+}
+

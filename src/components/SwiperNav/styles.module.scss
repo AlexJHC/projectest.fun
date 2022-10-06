@@ -1,0 +1,40 @@
+@import "./src/sources/styles/mixins";
+
+.swiperNavButtons {
+  display: none;
+  gap: 16px;
+  padding-right: 60px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  @include themed() {
+    @media (min-width: 720px) {
+      display: flex;
+    }
+
+    .next, .prev {
+      background-color: themedValue(theme);
+      width: 32px;
+      height: 32px;
+      position: relative;
+      border-radius: 60px;
+      cursor: pointer;
+
+
+      > img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-35%, -50%);
+      }
+    }
+
+    .next > img {
+      transform: translate(-65%, -50%) rotate(180deg);
+    }
+
+    div:global(.swiper-button-disabled) {
+      opacity: 0.5 !important;
+      cursor: default !important;
+    }
+  }
+}

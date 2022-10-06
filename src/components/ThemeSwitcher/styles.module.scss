@@ -1,0 +1,36 @@
+@import "./src/sources/styles/mixins";
+
+.switcher {
+  width: 82px;
+  height: 40px;
+  grid-area: theme;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 90px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+
+  @include themed() {
+    background-color: themedValue(theme);
+
+    .moon,
+    .sun {
+      width: 32px;
+      height: 32px;
+      object-fit: none;
+      transition: background-color 250ms ease-out;
+      border-radius: 50%;
+    }
+
+    .sun {
+      filter: themedValue(logo)
+    }
+
+    .active {
+      background-color: #FFFFFF;
+      }
+  }
+}

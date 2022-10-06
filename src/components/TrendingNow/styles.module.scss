@@ -1,0 +1,68 @@
+@import './src/sources/styles/mixins';
+
+.title {
+  padding-left: 16px;
+  padding-bottom: 24px;
+  padding-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include smoothColor();
+  @include themed() {
+    color: themedValue(title);
+    background-color: themedValue(backgroundColorMain);
+
+    .next, .prev {
+      width: 32px;
+    }
+
+    h3 {
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -1px;
+      font-weight: 700;
+      position: relative;
+
+      &:after {
+        @include arrow();
+        left: 207px;
+      }
+    }
+
+    @media (min-width: 720px) {
+      padding-left: 60px;
+      padding-bottom: 28px;
+    }
+  }
+}
+
+.mySwiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+  padding-left: 16px;
+  @include smoothColor();
+  @include themed() {
+    background-color: themedValue(backgroundColorMain);
+
+    @media (min-width: 720px) {
+      padding-left: 60px;
+    }
+
+
+    .swiperScrollbar {
+      margin-top: 24px;
+      width: 91.21%;
+      border-radius: 60px;
+      height: 8px;
+      background-color: themedValue(theme);
+
+      div {
+        background: themedValue(swiper);
+        width: 25%;
+      }
+    }
+  }
+}

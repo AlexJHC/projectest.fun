@@ -1,0 +1,32 @@
+.social {
+  grid-area: social;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+
+  a {
+    width: 38px;
+    height: 38px;
+  }
+
+  a img {
+    transition: filter 250ms ease-in, transform 250ms ease-in;
+  }
+
+  a img:hover {
+    filter: invert(15%);
+    transform: translateY(-5%);
+  }
+
+  @media (min-width: 720px) {
+    align-self: center;
+    justify-self: flex-end;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: 1440px) {
+    align-self: flex-end;
+  }
+}

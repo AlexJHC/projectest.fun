@@ -1,0 +1,34 @@
+@import './variables';
+
+$themes: (
+        light: (
+                backgroundColorLocation: $grey,
+                backgroundColorFooter:$white,
+                backgroundColorMain: $themWhite,
+                backgroundColorSlider:$white,
+                backgroundColorHeader:$white,
+                title:$dark,
+                text:$textWhiteGrey,
+                card:$lightDark,
+                logo:$whiteLogo,
+                theme:$themWhite,
+                swiper:$blue,
+                nav:$darkLogo,
+                placeholder:$whitePlaceholder,
+        ),
+        dark: (
+                backgroundColorLocation: $veryDark,
+                backgroundColorFooter:$dark,
+                backgroundColorMain:$lightDark,
+                backgroundColorSlider:$veryDark,
+                backgroundColorHeader:$transparent,
+                title:$white,
+                text: $textGrey,
+                card:$white,
+                logo:$darkLogo,
+                theme:$themDark,
+                swiper:$white,
+                nav:$whiteLogo,
+                placeholder:$blackPlaceholder,
+        ),
+);

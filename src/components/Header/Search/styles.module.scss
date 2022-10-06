@@ -1,0 +1,137 @@
+@import "./src/sources/styles/mixins";
+
+.container {
+  width: 100%;
+  min-height: 230px;
+  position: absolute;
+  z-index: 1;
+  top: -80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  will-change: top;
+  transition: top 400ms ease-out;
+  padding-top: 16px;
+  @media (min-width: 720px) {
+
+  }
+
+  @include themed() {
+    background-color: themedValue(backgroundColorFooter);
+
+    .search {
+      padding-top: 32px;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+
+      .wrapper {
+        display: flex;
+        align-items: center;
+        background-color: themedValue(theme);
+        border-radius: 8px;
+        min-width: 80%;
+        min-height: 40px;
+        position: relative;
+        @media (min-width: 720px) {
+          min-width: 620px;
+        }
+
+        .icon {
+          width: 23px;
+          height: 23px;
+          filter: themedValue(nav);
+          background-color: transparent;
+          margin-left: 16.5px;
+
+        }
+
+        input {
+          border: none;
+          background-color: transparent;
+          text-indent: 5px;
+          padding: 3px 3px 3px 0;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 100%;
+          color: themedValue(text);
+
+          &:placeholder-shown {
+            width: 33%;
+            @media (min-width: 720px) {
+              width: 100%
+            }
+          }
+
+          &::placeholder {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: themedValue(placeholder);
+          }
+
+          &:focus::placeholder {
+            color: transparent;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .clear {
+        position: absolute;
+        right: 15px;
+        top: 52px;
+        font-size: 28px;
+        font-weight: 100;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: themedValue(title);
+        transition: transform 400ms;
+        @media (min-width: 920px) {
+          right: 37px;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .autocomplete {
+      padding-top: 3%;
+      padding-bottom: 3%;
+      min-width: 250px;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      color: themedValue(text);
+      transition: opacity 450ms ease;
+      @media (min-width: 720px) {
+        padding-top: 28px;
+        min-width: 620px;
+      }
+
+      span {
+        cursor: pointer;
+
+        &:hover {
+          color: themedValue(title);
+        }
+      }
+    }
+  }
+}
+
+.show {
+  top: 0;
+}
+
+.hide {
+  opacity: 0;
+}

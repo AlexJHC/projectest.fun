@@ -1,0 +1,19 @@
+.shop {
+  color: #FFFFFF;
+  background-color: #0075FF;
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 350ms ease;
+
+  &:hover {
+    background-color: #3E92F6FF;
+  }
+
+  &:active {
+    transform: translateY(5%);
+  }
+}
+

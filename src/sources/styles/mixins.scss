@@ -1,0 +1,44 @@
+@import "variables";
+@import "theme";
+
+$theme-map: null;
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    :global(.#{$theme}) & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge($theme-map, ($key: $value,)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themedValue($key) {
+  @return map-get($theme-map, $key);
+}
+
+@mixin smoothColor() {
+  transition: background-color 350ms ease-out, color 350ms ease-out;
+}
+
+@mixin arrow() {
+  content: "›";
+  position: absolute;
+  font-size: 30px;
+  font-weight: 800;
+  display: inline-block;
+  bottom: 7%;
+  right: 0;
+  z-index: 100;
+  @media (min-width: 720px) {
+    display: none;
+  }
+}
+
+@mixin swiperNav() {
+
+}
